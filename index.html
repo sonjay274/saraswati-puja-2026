@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>সরস্বতী পূজা ২০২৬ রসিদ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="receipt-container">
+    <h1>ওম সরস্বতী নমঃ</h1>
+    <img src="Saraswati.jpg" alt="সরস্বতী দেবী" class="saraswati" />
+    <h2>সরস্বতী পূজা ২০২৬</h2>
+    <p class="org-name"><marquee>কাঞ্চনপুর দক্ষিণপাড়া বয়েস ক্লাব, আদমদীঘি, বগুড়া</marquee></p>
+
+    <form id="receiptForm">
+      <div class="form-group">
+        <label>রসিদ নং:</label>
+        <input type="text" id="receiptNo" placeholder="যেমন: ০০১" required />
+      </div>
+      <div class="form-group">
+        <label>দাতার নাম:</label>
+        <input type="text" id="donorName" placeholder="দাতার নাম লিখুন" required />
+      </div>
+      <div class="form-group">
+        <label>টাকার পরিমাণ (৳):</label>
+        <input type="number" id="amount" placeholder="যেমন: ৫০০" required />
+      </div>
+      <div class="form-group">
+        <label>উদ্দেশ্য:</label>
+        <textarea id="purpose" placeholder="যেমন: অনুদান / সদস্য ফি" rows="2"></textarea>
+      </div>
+      <button type="submit" id="generateBtn">Generate Receipt</button>
+      <button type="button" id="printBtn">Print / Save as PDF</button>
+    </form>
+
+    <div id="generatedReceipt" style="margin-top:20px; display:none;">
+      <h2>রসিদ</h2>
+      <p><strong>রসিদ নং:</strong> <span id="outNo"></span></p>
+      <p><strong>দাতার নাম:</strong> <span id="outName"></span></p>
+      <p><strong>পরিমাণ:</strong> ৳<span id="outAmount"></span></p>
+      <p><strong>বিকাশ / নগদ:</strong> 01307746074</p>
+      <p><strong>উদ্দেশ্য:</strong> <span id="outPurpose"></span></p>
+      <div class="signatures">
+        <div>
+          <p>সভাপতি</p>
+          <strong>বিশাল হালদার</strong>
+        </div>
+        <div>
+          <p>ক্যাশিয়ার</p>
+          <strong>দীপ্ত কর্মকার</strong>
+        </div>
+      </div>
+      <p class="footer">design by ❤️ <strong>sonjay kundu</strong></p>
+    </div>
+  </div>
+   <script src="style.js"></script>
+  </body>
+</html>

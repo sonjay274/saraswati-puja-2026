@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans Bengali', sans-serif; }
+    body { background: #f3f4f6; display: flex; justify-content: center; padding: 20px; }
+    .receipt-container { background: #fff; border: 2px solid #f57c00; border-radius: 12px; padding: 20px; width: 100%; max-width: 600px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    h1 { text-align: center; color: #e65100; font-size: 1.8rem; }
+    h2 { text-align: center; color: #bf360c; margin: 10px 0; }
+    .org-name { text-align: center; font-weight: bold; margin-bottom: 15px; }
+    .form-group { display: flex; flex-direction: column; margin-bottom: 12px; }
+    label { font-weight: bold; margin-bottom: 5px; }
+    input, textarea { padding: 8px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; }
+    textarea { resize: vertical; }
+    button { background: #f57c00; color: white; padding: 10px; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; width: 100%; transition: 0.3s; margin-top:10px; }
+    button:hover { background: #e65100; }
+    #printBtn { background: #4caf50; margin-top: 10px; }
+    .footer { text-align: center; margin-top: 20px; font-size: 0.9rem; color: #444; }
+    img.saraswati { width: 100px; height: auto; display: block; margin: 10px auto; }
+    .signatures { display: flex; justify-content: space-between; margin-top: 25px; flex-wrap: wrap; text-align: center; }
+    .signatures div { flex: 1 1 45%; margin: 10px 0; }
+    @media (max-width: 500px) { h1 { font-size: 1.4rem; } h2 { font-size: 1.1rem; } }
+    @media print {
+      body { background: #fff; }
+      .form-group, #generateBtn { display: none; }
+      .receipt-container { border: none; box-shadow: none; width: 100%; max-width: 100%; }
+    }
